@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color:#f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Welcome to Kinsu-Anshuman family fun</h2>
+</header>
+<section>
+   <img src="http://192.168.29.48:9091/child.jpg" alt="friend" style="width:350px " >
+
+  <article>
+    <h1 style="color:red;">Awesome Family Fun Activities</h1>
+    <p>Hide and Seek: Depending on the size of your backyard, hide and seek is a great way for your kids to run and explore but within the safety of your own
+home. This game becomes more challenging and interesting if you combine it with the indoors of your home. Depending on the age of your kids, you may need to s
+et some guidelines or rules in place so that no one gets lost or hurt during the game.</p>
+
+    <p>Gardening: Much like our indoor gardening ideas above, outdoor gardening is a classic fun family activity in which the whole family can bond and enjoy
+together. There are many ways to approach family gardening, and we recommend starting out by taking your kids and family to the local gardening store, whether
+ it’s a nursery or a plant sale shop. </p>
+
+  </article>
+</section>
+
+<footer>
+  <p style="color:blue;">Thanks for visiting..</p>
+</footer>
+
+</body>
+</html>
